@@ -1,0 +1,46 @@
+<!-- <nav class="navbar sticky-top navbar-light bg-light">
+    <a class="navbar-brand" href="#">Sticky top</a>
+  </nav> -->
+
+
+  <nav class="nav">
+    <a class="navbar-brand" href="#">
+        <img src="https://pvstc2.talentassessnet3d.com.mx/talent3d/administrador/images/Assessnet_blanco_sinletras20percent.png"
+         width="auto" height="30" class="d-inline-block align-top" alt="" loading="lazy">
+         Talent3d
+    </a>
+    <ul class="nav__list">
+        <li class="nav__item">
+            <button mat-button [matMenuTriggerFor]="perfilamiento">Perfilamiento</button>
+            <mat-menu #perfilamiento="matMenu">
+              <button mat-menu-item [matMenuTriggerFor]="Competencias">Competencias</button>
+              <button mat-menu-item [matMenuTriggerFor]="Tcaps">Tcaps</button>
+              <button mat-menu-item [matMenuTriggerFor]="APP">APP</button>
+            </mat-menu>
+            <mat-menu #Competencias="matMenu">
+                <button mat-menu-item>Administrar</button>
+                <button mat-menu-item>Diccionario</button>
+            </mat-menu>
+              <mat-menu #Tcaps="matMenu">
+                <button mat-menu-item>Administrar</button>
+                <button mat-menu-item>Diccionario</button>
+              </mat-menu>
+              <mat-menu #APP="matMenu">
+                <button mat-menu-item>Administrar</button>                
+              </mat-menu>
+        </li>
+        <li class="nav__item">
+            <button mat-button [matMenuTriggerFor]="Administracion">Administración</button>
+            <mat-menu #Administracion="matMenu">
+                <button mat-menu-item>Registro</button>
+                <button mat-menu-item>Registro Masivo</button>
+                <button mat-menu-item>Seguimiento</button>
+            </mat-menu>
+
+        </li>
+        <li class="nav__item">Seguridad</li>
+        <li class="nav__item">
+            <button mat-fab color="primary">Lidia</button>
+        </li>
+    </ul>
+</nav>

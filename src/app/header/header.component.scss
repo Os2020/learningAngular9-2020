@@ -1,0 +1,26 @@
+@import 'src/variables.scss';
+// IMPORTANT
+.nav {
+	position: sticky;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 60px;
+    top: 0;
+    a{font:$fontTalent3d;color:$BrandFontColor;font-size:$BrandFontSize; }
+}
+// DEMO LAYOUT CODE
+.nav {
+	background: $colorPeople;
+	&__title {
+		margin: 0px 30px;
+	}
+	&__item {
+		display: inline-block;
+		margin: 0px 30px; border:0px;color:$BrandFontColor;
+	}
+}
+.brandTipografia{ font:$fontTalent3d;color:$BrandFontColor;font-size:$BrandFontSize;}
+
+
+
