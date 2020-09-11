@@ -4,8 +4,8 @@ import { AdecptopersonaComponent } from './adecptopersona/adecptopersona.compone
 import {AdecptopersonaprofileComponent} from './adecptopersonaprofile/adecptopersonaprofile.component';
 // import { PresentationCardComponent } from './presentation-card//presentation-card.component';
 const routes: Routes = [
-  { path:'app',component:AdecptopersonaComponent},
-  { path:'appp',component:AdecptopersonaprofileComponent},
+  { path:'frontend/app',component:AdecptopersonaComponent},
+  { path:'frontend/appp',component:AdecptopersonaprofileComponent},
   // { path:'pc',component:PresentationCardComponent},
   
 ];
