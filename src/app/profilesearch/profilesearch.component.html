@@ -1,0 +1,22 @@
+<mat-card>
+<div class="row">
+  <div class="col-md-4">
+ 
+  </div>
+<div class="col-md-8 text-md-left">
+  <form class="example-form">
+    <input type="text"
+           placeholder="Busca un puesto"
+           [formControl]="control"
+           [matAutocomplete]="auto">
+    <mat-autocomplete #auto="matAutocomplete">
+      <mat-option *ngFor="let street of filteredStreets | async" [value]="street">
+        {{street}}
+      </mat-option>
+    </mat-autocomplete>
+  </form>   
+</div>
+
+</div>
+</mat-card>
+  

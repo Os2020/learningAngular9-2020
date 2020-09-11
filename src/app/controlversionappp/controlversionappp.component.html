@@ -1,0 +1,22 @@
+       <div class="row">
+           <div class="col-md-6 text-md-right">
+            <mat-form-field appearance="fill">
+            <mat-label>Selecciona Versión</mat-label>
+            <mat-select>
+                <mat-option>None</mat-option>
+                <mat-option *ngFor="let state of states" [value]="state">{{state}}</mat-option>
+            </mat-select>
+            </mat-form-field>
+           </div>
+           <div class="col-md-6">
+          
+            <!-- Example single danger button -->
+            <div ngbDropdown class="d-inline-block">
+                <button class="btn btn-outline-primary" id="dropdownBasic1" ngbDropdownToggle>Nueva!</button>
+                <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+                  <button ngbDropdownItem>Limpia</button>
+                  <button ngbDropdownItem>Clonar</button>                  
+                </div>
+              </div>
+       </div>  </div>  <hr>
+
