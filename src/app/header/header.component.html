@@ -15,7 +15,7 @@
             <mat-menu #perfilamiento="matMenu">
               <button mat-menu-item [matMenuTriggerFor]="Competencias">Competencias</button>
               <button mat-menu-item [matMenuTriggerFor]="Tcaps">Tcaps</button>
-              <button mat-menu-item [matMenuTriggerFor]="APP">APP</button>
+              <button mat-menu-item [routerLink]="['appp']">APPP</button>
             </mat-menu>
             <mat-menu #Competencias="matMenu">
                 <button mat-menu-item>Administrar</button>
@@ -25,9 +25,7 @@
                 <button mat-menu-item>Administrar</button>
                 <button mat-menu-item>Diccionario</button>
               </mat-menu>
-              <mat-menu #APP="matMenu">
-                <button mat-menu-item [routerLink]="['appp']">Administrar</button>                
-              </mat-menu>
+              
         </li>
         <li class="nav__item">
             <button mat-button [matMenuTriggerFor]="Administracion">Administración</button>
@@ -35,6 +33,7 @@
                 <button mat-menu-item>Registro</button>
                 <button mat-menu-item>Registro Masivo</button>
                 <button mat-menu-item>Seguimiento</button>
+                <button mat-menu-item [routerLink]="['app']">APP</button>
             </mat-menu>
 
         </li>
